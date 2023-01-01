@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tarukata</title>
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+    <link rel="icon" href="./images/iconos/logo.png" type="ico">
+    <script src="./js/scrollreveal.js" ></script>   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+     
+    
+</head>
+
+<body>
+    <header>
+       
+            <div  class="container front">  
+                <div class="row">
+                    <nav class="nav">
+                        <div class="nav__div">
+                            <h1>taru<span class="color">kata</span></h1>
+                        </div>
+                        <div class="nav__div2">
+                            <button id="burguer"><svg xmlns="http://www.w3.org/2000/svg" fill="white" height="50px" widht="50px"viewBox="0 0 512 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></button>
+                            <ul id="nav__div2__ul">
+                                <li><a  href="#inicio">Inicio</a></li>
+                                <li><a  href="#nosotros">Nosotros</a></li>
+                                <li><a  href="#especialidades">Especialidades</a></li>
+                                <li><a  href="#carta">Carta</a></li>
+                                <li><a  href="#reservar">Reservar</a></li>
+                                <li><a href="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                            class="bi bi-facebook" viewBox="0 0 16 16">
+                                            <path
+                                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li><a href="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                            class="bi bi-instagram" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="header__div">
+                        <div>
+                            <h1>¿Qué comemos hoy?</h1>
+                            <p>Bienvenido a tarukata, tenemos una gran variedad de platos traídos de diferentes países para tu deguste
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--SWIPER-->
+        <div class="swiper mySwiper">    
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/slider/slider (1).jpg" /></div>
+                <div class="swiper-slide"><img src="./images/slider/slider (2).jpg" /></div>
+                <div class="swiper-slide"><img src="./images/slider/slider (3).jpg" /></div>
+                <div class="swiper-slide"><img src="./images/slider/slider (4).jpg" /></div>
+             </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+        </div>     
+    </header>
+
+    <!--Nosotros-->
+
+    <section id="nosotros">
+      <div class="container">
+        <div class="row ">
+            <div class="nosotros__div ">
+                <div class="grid">
+                    <div class="uno">
+                        <h1>¿Cuál es nuestra <span class="color">historia?</span></h1>
+                    </div>
+                    <div class="dos">
+                        <p>Dicen que en Japón hay muchas formas de decir bienvenidos, pero que ninguna tiene tanto significado
+                            como tarukata. Por eso, este vocablo da nombre al restaurante y el razonamiento está presente en él Simboliza la intención de hacer sentir al comensal como en casa y demuestra, al mismo tiempo, la
+                            veneración que aquí se profesa a una cultura como la japonesa en encuentro con la peruana. </p>
+                    </div>
+                    <div class="tres">
+                        <p>El lugar a visitar por cualquiera que
+                            estime esta comida y su magia. La
+                            conjunción de ingredientes de dos
+                            mundos tan diferentes</p>
+                    </div>
+                    <div class="cuatro">
+                        <p>El lugar a visitar por cualquiera que
+                            estime esta comida y su magia. La
+                            conjunción de ingredientes de dos
+                            mundos tan diferentes</p>
+                        
+                    </div>
+                    <div class="cinco">
+                        <div class="a">
+                            <h1>05</h1>
+                            <p>Restaurante en todo lima</p>
+                        </div>
+                        
+                        <div class="b">
+                            <h1>12</h1>
+                            <p>Años de trayectoria</p>
+                        </div>
+
+                        <div class="c">
+                            <h1>08</h1>
+                            <p>Premios culinarios</p>
+                        </div>    
+                    </div>
+                                   
+                </div>
+                <div class="imagen_nosotros">
+                    <img src="images/chef2.jpg" width="100%">
+                </div>
+            </div>
+        </div>
+      </div>  
+    </section>
+
+    <!--Especialidades-->
+
+    <section id="especialidades">
+      <div class="container">  
+        <div class="row">
+            <div class="especialidades_div">
+                <div class="especialidades_div_titulo">
+                    <h2>Especialidades de la casa</h2>
+                    <p>Las platos mas solicitado llevado a otro nivel, lo mejor de lo mejor</p>
+                </div>
+                <div class="card">
+                    <div class="card_div">
+                        <h1>01.</h1>
+                            <div class="card_div_text">
+                                <h5>Tallarín <a class="color">saltado</a></h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sed eveniet quae tempora eaque debitis
+                                asperiores, dolor cupiditate enim corporis!</p>
+                                <h2 class="color">S/ 35</h2>
+                            </div>        
+                    </div>
+                    <div class="card_div2">
+                        <img src="images/tallarin.jpg"  />
+                    </div>
+                </div>
+                <div class="card2">
+                    <div class="card2_div">
+                        <h1>02.</h1>
+                            <div class="card2_div_text">
+                                <h5>Sopa de <a class="color">camarones</a></h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sed eveniet quae tempora eaque debitis
+                                asperiores, dolor cupiditate enim corporis!</p>
+                                <h2 class="color">S/ 30</h2>
+                            </div>    
+                    </div>
+                    <div class="card2_div2" >
+                        <img src="images/camarones.jpg" >
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_div">
+                        <h1>03.</h1>
+                            <div class="card_div_text">
+                                <h5>Ramen de <a class="color">cerdo</a></h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sed eveniet quae tempora eaque debitis
+                                asperiores, dolor cupiditate enim corporis!</p>
+                                <h2 class="color">S/ 32</h2>
+                            </div>    
+                    </div>
+                    <div class="card_div2">
+                        <img src="images/ramen.jpg" >
+                    </div>
+                </div>
+                <div class="card2">
+                    <div class="card2_div">
+                        <h1>04.</h1>
+                            <div class="card2_div_text">
+                                <h5>Ensalada de <a class="color">pasta verde</a></h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sed eveniet quae tempora eaque debitis
+                                asperiores, dolor cupiditate enim corporis!</p>
+                                <h2 class="color">S/ 22</h2>
+                            </div>        
+                    </div>
+                    <div class="card2_div2">
+                        <img src="images/pasta.jpg" >
+                    </div>
+                </div>
+            </div>   
+        </div>
+      </div>  
+    </section>
+
+    <!--Testimonios-->
+
+    <div id="testimonios">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide testi">                  
+                        <img class="testimonios_img"  src="./images/testimonios/testimonio (1).png" />
+                        <p class="testi_p"><span class="color comillas">"</span>
+                        Excelente y muy agradable el lugar para compartir en familia o amigos, tanto en sus platos de la carta
+                            así como en las bebidas a elegir, están en el punto exacto de ingredientes al combinar
+                        <span class="color comillas">"</span></p>                   
+                </div>
+                <div class="swiper-slide testi">
+                   
+                        <img class="testimonios_img" src="./images/testimonios/testimonio (2).png" />
+                        <p class="testi_p"><span class="color comillas">"</span>
+                        La comida muy agradable, la atención es muy buena, todo muy rico, espero ir nuevamente, uno de los mejores restaurantes que he visitado
+                        <span class="color comillas">"</span></p>
+                    
+                </div>
+                <div class="swiper-slide testi">
+                   
+                        <img class="testimonios_img" src="./images/testimonios/testimonio (3).png" />
+                        <p class="testi_p"><span class="color comillas">"</span>
+                        Uno de los mejores restaurantes que he visitado, sin duda las pastas fueron las mejores, la comida muy agradable, la atención es muy buena
+                        <span class="color comillas">"</span></p>
+                   
+                </div>
+                <div class="swiper-slide testi">
+                    
+                        <img class="testimonios_img" src="./images/testimonios/testimonio (4).png" />
+                        <p class="testi_p"><span class="color comillas">"</span>
+                        Todo muy rico, espero ir nuevamente, uno de los mejores restaurantes que he visitado, sin duda las pastas fueron las mejores 
+                        <span class="color comillas">"</span></p>
+                   
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>        
+        </div>
+    </div>
+
+    <!--Carta-->
+
+    <section id="carta">
+      <div class="container">  
+        <div class="row">
+            <div class="carta_titulo ">
+                <h2>Nuestro Menú</h2>
+            </div>           
+            <div class="carta_menus">
+                <button>
+                    <img src="./images/iconos/ensaladas.svg" width="80px" height="80px" />
+
+                    <p>Ensaladas</p>
+                </button>
+            
+                <button>
+                    <img src="./images/iconos/sopas.svg" width="80px" height="80px"/>
+                    <p>Sopas</p>
+                </button>
+            
+                <button>
+                    <img src="./images/iconos/pastas.svg" width="80px" height="80px"/>
+                    <p>Pastas</p>
+                </button>
+            
+                <button>
+                    <img src="./images/iconos/pizza.svg" width="80px" height="80px"/>
+                    <p>Pizzas</p>
+                </button>
+            
+                <button>
+                    <img src="./images/iconos/postres.svg" width="80px" height="80px"/>
+                    <p>Postres</p>
+                </button>
+            </div>
+            <div class="carta_clasificacion">
+                
+                    <button>Mediana</button>
+                    <button>Grande</button>
+                    <button>Familiar</button>
+                    <button>XL</button>
+
+            </div>
+
+            <div class="carta_lista">
+                <div class="carta_lista_div" >
+                    <div class="carta_lista_div_div">
+                        <div class="carta_lista_div_div_uno">
+                            <h5>La fugazza</h5>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="carta_lista_div_div_dos">
+                            <h2>S/ 25</h2>
+                        </div >
+                    </div>
+                    <div class="carta_lista_div_div">
+                        <div class="carta_lista_div_div_uno">
+                            <h5>Napolitana</h5>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="carta_lista_div_div_dos">
+                            <h2>S/ 28</h2>
+                        </div>
+                    </div>
+                    <div class="carta_lista_div_div">
+                        <div class="carta_lista_div_div_uno">
+                            <h5>Cuatro quesos</h5>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="carta_lista_div_div_dos">
+                            <h2>S/ 28</h2>
+                        </div>
+                    </div>
+                    <div class="carta_lista_div_div">
+                        <div class="carta_lista_div_div_uno">
+                            <h5>Americana</h5>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="carta_lista_div_div_dos">
+                            <h2>S/ 32</h2>
+                        </div>
+                    </div>
+                    <div class="carta_lista_div_div">
+                        <div class="carta_lista_div_div_uno">
+                            <h5>Carbonara</h5>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="carta_lista_div_div_dos">
+                            <h2>S/ 30</h2>
+                        </div>
+                    </div>
+                    <div class="carta_lista_div_div">
+                        <div class="carta_lista_div_div_uno">
+                            <h5>Barbacoa</h5>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="carta_lista_div_div_dos">
+                            <h2>S/ 25</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="carta_lista_div2" >
+                    <div class="carta_lista_div_div">
+                        <div class="carta_lista_div_div_uno">
+                            <h5>La fugazza</h5>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="carta_lista_div_div_dos">
+                            <h2>S/ 25</h2>
+                        </div>
+                    </div>
+                    <div class="carta_lista_div_div">
+                        <div class="carta_lista_div_div_uno">
+                            <h5>Napolitana</h5>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="carta_lista_div_div_dos">
+                            <h2>S/ 28</h2>
+                        </div>
+                    </div>
+                    <div class="carta_lista_div_div">
+                        <div class="carta_lista_div_div_uno">
+                            <h5>Cuatro quesos</h5>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="carta_lista_div_div_dos">
+                            <h2>S/ 28</h2>
+                        </div>
+                    </div>
+                    <div class="carta_lista_div_div">
+                        <div class="carta_lista_div_div_uno">
+                            <h5>Americana</h5>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="carta_lista_div_div_dos">
+                            <h2>S/ 32</h2>
+                        </div>
+                    </div>
+                    <div class="carta_lista_div_div">
+                        <div class="carta_lista_div_div_uno">
+                            <h5>Carbonara</h5>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="carta_lista_div_div_dos">
+                            <h2>S/ 30</h2>
+                        </div>
+                    </div>
+                    <div class="carta_lista_div_div">
+                        <div class="carta_lista_div_div_uno">
+                            <h5>Barbacoa</h5>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="carta_lista_div_div_dos">
+                            <h2>S/ 25</h2>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+
+            </div>
+        </div>    
+    </section>
+
+<!-- Reservar -->    
+
+    <section id="reservar">
+      <div class="container"> 
+        <div class="imagen">                        
+            <img src="./images/form_2.jpg" />
+        </div>
+        <div class="row">
+            <div class="reservar_flex">                 
+                <div class="reservar_div_uno ">
+                    <div>
+                        <h1 style="color: white; font-weight: 600;">taru<span class="color">kata</span></h1>
+                        <p>"Un <span class="color">buen restaurante</span>ofrece la comida de la <span class="color"> mejor calidad</span>"</p>
+                        <h5>Dirección</h5>
+                        <p>Av. Argentina 4140, Callao 07001</p>
+                        <h5>Horario</h5>
+                        <p>Lunes a Viernes: 9am - 10pm</p>
+                        <p>Sábados: 9am - 8pm</p>
+                        <h5>Contáctanos</h5>
+                        <p>contacta@tarukata.com</p>
+                    </div>
+                </div>
+               
+                <div class="reservar_div_dos ">
+                    <form >
+                        <h1>Reservar</h1>
+                        <input type="text" placeholder="Nombre y Apellidos">
+                        <input type="email" placeholder="Email">
+                        <input type="number" placeholder="Celular">
+                        <div>
+                            <input type="date" placeholder="Día">
+                            <input type="time" placeholder="Hora">
+                        </div>
+                        <select name="">
+                            <option value="1">1 persona</option>
+                            <option value="2">2 personas</option>
+                            <option value="3">3 personas</option>
+                            <option value="4">4 personas</option>
+                                            
+                        </select>
+                        <textarea name="" id="" placeholder="Mensaje"></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </div>       
+    </section>
+    <footer>
+      <div class="container">  
+        <div class="row">
+            <div class="footer__div">
+                <div class="footer__div__uno">
+                    <h3 style="color: white; font-weight: 600;">tarukata</h3>
+                    <p>Somos un restaurante de alta cocina que busca llevar lo mejor de nuestro país a tu paladar</p>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white"
+                            class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__div__dos">
+                    <h5>Dirección</h5>
+                    <p>Av. Argentina 4140, Callao 07001</p>
+                </div>
+                <div class="footer__div__tres">
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#especialidades">Especialidades</a></li>
+                        <li><a href="#carta">Carta</a></li>
+                        <li><a href="#reservar">Reservar</a></li>                  
+                    </ul>      
+                </div>
+                <div class="footer__div__cuatro">
+                    <p>© Copyright 2021. Todos los derechos reservados - Diseñado por <svg version="1.1" id="Capa_1" class="icono" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 82.2 73.6" style="enable-background:new 0 0 82.2 73.6;" xml:space="preserve"><path class="st0" d="M49.1,62.6c-3.3,1.1-6.6,0.6-9.9-0.4c-4.8-1.5-9.3-3.7-13.8-6.1c-4.1-2.1-8.2-4.2-12.6-5.6
+                    c-1.7-0.5-3.4-0.9-5.2-0.9c-1.9-0.1-3.4,0.6-4.5,2.3c-0.8-0.7-1.3-1.6-1.4-2.6c-0.4-3.1,2.2-6.5,6.1-6.6c1.9,0,3.8,0.4,5.6,0.9
+                    c4.8,1.4,9.3,3.4,13.9,5.3c4.3,1.8,8.7,3.5,13.2,4.5c2.7,0.6,5.4,0.8,8.1,0.2c1.1-0.2,2.1-0.6,2.9-1.4c0.2-0.2,0.3-0.4,0.4-0.6
+                    c1.6-3.1,3.5-6,6-8.6c0.6-0.6,1.3-1.2,2-1.8c0.2-0.1,0.4-0.2,0.6-0.3c0.3-0.1,0.7-0.3,0.9,0c0.3,0.3,0.4,0.7,0.1,1.1
+                    c-0.5,0.9-1,1.9-1.5,2.9c-1.1,2.2-2.1,4.4-2.7,6.7c0,0.1,0,0.2-0.1,0.3c1-0.1,1.8-0.4,2.6-0.9c1.5-0.9,2.7-2,3.8-3.3
+                    c3.4-4,5.8-8.5,7.1-13.6c0.3-1.2,0.5-2.5,0.2-3.8c-0.3-1.3-1-1.7-2.3-1.6c-2.9,0.2-5.3,1.6-7.5,3.2c-5.6,4.2-9.7,9.5-12.5,15.9
+                    c-0.5,1.2-0.9,2.5-0.9,3.9c0,0.5-0.4,0.6-0.8,0.6c-1.7,0.1-3.2-0.6-4.2-2c-1.5-2.1-1.6-4.4-0.9-6.8c0.7-2.4,2.2-4.5,3.8-6.4
+                    c4.6-5.3,10.2-9.2,17-11.3c2.7-0.9,5.4-1.2,8.2-1c2,0.1,3.9,0.7,5.4,2.1c1.2,1.2,1.9,2.7,2.2,4.3c0.8,4.2-0.6,8-2.9,11.4
+                    c-3.5,5.3-8.3,9.1-14.2,11.5c-2.3,0.9-4.7,1.3-7.2,1.1c-0.4,0-0.8-0.1-1.2-0.1c0.9,0.7,2.1,0.8,3.2,1c-0.1,1.4-0.2,2.8-0.2,4.2
+                    c0,2.1,0.1,4.1,0.7,6.1c0.2,0.7,0.6,1.4,0.9,2.1c0.2,0.6,0.2,0.7-0.4,0.9c-1.4,0.5-2.9,0.7-4.4,0.1c-2-0.8-3-2.4-3.5-4.4
+                    C49.4,64.5,49.3,63.5,49.1,62.6z"/>
+                    <path class="st0" d="M12,42.2c2.9-3.3,4.7-7.1,6.6-10.8c2.5-4.8,4.9-9.7,7.4-14.5c1.8-3.3,3.8-6.4,6.4-9.1c2.2-2.3,4.6-4.1,7.7-5
+                    c2.3-0.7,4.6-0.8,6.9,0.2c3,1.3,5,3.6,5.8,6.9c0.4,1.9,0,3.8-1,5.6c-0.5-0.5-1-1-1.5-1.4c-3.2-2.4-7.4-2.5-10.8-0.2
+                    c-2.6,1.7-4.6,4-6.4,6.6c-2.4,3.4-4.4,7.2-6.4,10.9c-2,3.6-3.8,7.3-6.2,10.7c-0.4,0.5-0.7,1-1.1,1.5c-0.1,0.1-0.3,0.2-0.4,0.2
+                    C16.7,42.9,14.4,42.5,12,42.2z"/>
+                    </svg>
+                    </p>
+                </div>
+            </div>    
+        </div>
+      </div>  
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+        
+        var swiper = new Swiper(".mySwiper", {
+            centeredSlides: true,
+            loop: true,
+            autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+            },
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+        });
+
+
+      </script>
+</body>
+
+</html>
